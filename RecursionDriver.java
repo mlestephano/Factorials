@@ -8,6 +8,13 @@ public class RecursionDriver
      return 2+count(n-1);
  }
  
+ public static int count2(int n)
+ {
+     if (n<1)
+        return 0;
+     return 2+count(n-1);
+ }
+ 
  public static void main(String[] args)
  {
  /*
@@ -19,12 +26,15 @@ public class RecursionDriver
   * 4. Find the sum of odd numbers from 0 to N
   * 5. Find the sum of even numbers from 0 to N
   */ 
- int counted=0;
  
  // Task 1
- 
- 
+ int counted=0;
  counted = count(10);
  System.out.println(counted);
+ 
+ // Task 2
+ int counted2=0;
+ counted2 = count(20);
+ System.out.println(counted2);
  }
 }
